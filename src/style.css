@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'Dela Gothic One';
+  src: url(./fonts/DelaGothicOne-Regular.ttf);
+}
+:root {
+  font-family: 'Montserrat', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+
+  font-size: 20px;
+
+  --black-color: #191919;
+  --grey-color: #CACACA;
+  --grey-color-2: #9F9F9F;
+  --main-gradient-vert: linear-gradient(180deg,rgba(254, 193, 99, 1) 0%, rgba(222, 67, 19, 1) 100%);
+  --main-gradient-hor: linear-gradient(90deg,rgba(254, 193, 99, 1) 0%, rgba(222, 67, 19, 1) 100%);
+}
+
+html {
+  overflow-x: hidden;
+}
+.title-font {
+  font-family: 'Dela Gothic One';
+}
+.main-title {
+  font-size: 2.25rem;
+}
+.title-2 {
+  font-size: 2rem;
+}
+.title-3 {
+  font-size: 1.5rem;
+}
+body.main-page {
+  background-color: var(--black-color);
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.btn {
+  background: var(--main-gradient-hor);
+  color: #fff;
+  border: none;
+
+  border-radius: 40px;
+
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  padding-left: 32px;
+  padding-right: 32px;
+  cursor: pointer;
+}
+.rBtn {
+  border-radius: 100%;
+  background-color: #212121;
+  cursor: pointer;
+
+  width: 48px;
+  height: 48px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container {
+  max-width: 1400px;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  margin: 0 auto;
+}
+
+.switch-wrapper {
+  display: flex;
+  position: relative;
+
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 6px;
+}
+.switch-wrapper::before {
+  content: '';
+  width: 90px;
+  height: 40px;
+  background: var(--main-gradient-vert);
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  z-index: -1;
+  border-radius: 100px;
+}
+.switch-wrapper .switch-link {
+  width: 90px;
+  height: 40px;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+/* Catalog Page */
+
+body.catalog {
+
+}
