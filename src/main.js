@@ -8,6 +8,8 @@ import './css/catalog-products.css'
 
 import './css/cart.css'
 
+
+
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 

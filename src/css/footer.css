@@ -37,6 +37,9 @@
 .footer .inner .footer__logo .logo {
     margin-bottom: 1em;
 }
+.footer .inner .footer__logo .info {
+    margin-top: 1.4em;
+}
 .footer .inner .footer__nav {
  color: #9F9F9F;
  display: flex;
@@ -49,18 +52,21 @@
 }
 .footer .inner .footer__contacts p {
     margin-bottom: .5em;
+    font-size: 0.9rem;
 }
 .footer .inner .footer__contacts .contacts {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1em;
+    margin-bottom: 0.6em;
     font-size: 1.25rem;
     font-weight: 300;
 }
 .footer .inner .footer__contacts .contacts a {
     display: flex;
-    column-gap: 1em;
+    column-gap: 0.4em;
     align-items: center;
+
+    margin-bottom: 0.2em;
 }
 .footer .inner .footer__social {
     display: flex;
@@ -73,7 +79,11 @@
   justify-content: space-between;
 
   border-top: 1px solid #3C3C3C;
-  padding-top: 1em;
+  padding-top: 1.8em;
   padding-bottom: 1em;
   margin-top: 3em;
+
+  font-size: 0.7rem;
+
+  color: #ADADAD;
 }

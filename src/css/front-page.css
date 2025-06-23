@@ -47,17 +47,21 @@
 
     display: flex;
     align-items: center;
-    column-gap: 5em;
+    column-gap: 6em;
 }
 .about .inner .about__brand{
-    width: 20%;
+    width: 26%;
 }
 .about .inner .about__brand img{
-
+    width: 100%;
 }
 .about .inner .about__content {
     padding-top: 4em;
     padding-bottom: 4em;
+}
+.about .inner .about__content h3 {
+    line-height: 1.14;
+    margin-bottom: .5em;
 }
 .about .inner p {
     font-size: 1.1rem;
@@ -67,7 +71,7 @@
   column-gap: .5em;
   margin-top: 3em;
 
-  max-width: 800px;
+  max-width: 892px;
 }
 .about .inner .advs__list .advs__item {
   border-radius: 20px;
@@ -109,13 +113,18 @@
   justify-content: space-between;
   align-items: center;
 }
+.catalog .catalog__header .switch-wrapper .switch-link, .catalog .catalog__header .switch-wrapper::before{
+    height: 52px;
+    width: 108px;
+}
+
 .catalog .catalog__main {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 5em;
 
-  column-gap: 2em;
+  column-gap: 6em;
 }
 .catalog .catalog__main .catalog__info {
   border-top-right-radius: 60px;
@@ -147,9 +156,9 @@
 }
 .catalog .catalog__main .catalog__info .catalog__name {
     display: flex;
-    justify-content: space-between;
+    column-gap: 2em;
     align-items: center;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 .catalog .catalog__main .catalog__info .catalog__name h3 {
     font-size: 2rem;
@@ -185,6 +194,21 @@
     font-size: 1.25rem;
     display: flex;
     column-gap: 1em;
+    margin-top: 3em;
+}
+.catalog .catalog__main .catalog__wrapper .catalog__contols .catalog__back {
+    padding-left: 1em;
+    background-image: url('./images/back.svg');
+    background-repeat: no-repeat;
+    background-position: left 60%;
+    cursor: pointer;
+}
+.catalog .catalog__main .catalog__wrapper .catalog__contols .catalog__next {
+    padding-right: 1em;
+    background-image: url('./images/next.svg');
+    background-repeat: no-repeat;
+    background-position: right 66%;
+    cursor: pointer;
 }
 .catalog__wrapper .swiper-slide {
     transition: all ease-in .2s;
@@ -225,6 +249,32 @@
     margin-bottom: 1.2em;
     max-width: 600px;
 }
+.accessories .accessories__content .accessories__advs .adv {
+    position: relative;
+    padding-left: 1.2em;
+}
+.accessories .accessories__content .accessories__advs .adv::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+
+    border-radius: 100%;
+}
+.accessories .accessories__content .accessories__advs .adv::after {
+    content: '';
+    position: absolute;
+    border: 1px solid #7A7A7A;
+    left: -4px;
+    top: 24%;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: transparent;
+}
 .accessories .accessories__content h2 {
     margin-bottom: 0.5em;
 }
@@ -234,9 +284,12 @@
 
     margin-bottom: 1.25em;
 }
+.accessories .accessories__content .accessories__more {
+    width: 400px;
+}
 /* Feedback */
 .feedback {
-    margin-top: 6em;
+    padding-top: 19em;
     position: relative;
 }
 .feedback::before {
@@ -245,12 +298,12 @@
     background-repeat: no-repeat;
     background-size: contain;
    
-    width: 100%;
-    height: 210px;
+    width: 77%;
+    height: 65%;
     position: absolute;
     z-index: -1;
     left: 0;
-    top: -30%;
+    top: 6%;
 }
 .feedback .inner {
     display: flex;
@@ -269,6 +322,8 @@
 }
 .feedback__text p {
     color: #CACACA;
+    font-size: 1.2em;
+    max-width: 500px;
 }
 .feedback .inner .feedback__form {
     background-color: #252525;
@@ -288,6 +343,7 @@
 .feedback .form-row .form-field label {
     font-size: 0.8rem;
     font-weight: 300;
+    margin-bottom: 0.2em;
 }
 .feedback .form-row .form-field input {
     font-size: 0.8rem;
@@ -305,7 +361,15 @@
     font-weight: 300;
     color: #505050;
     margin-bottom: 1.5em;
+
+    display: flex;
+    column-gap: 1em;
+
+    align-items: center;
 }
 .feedback .feedback__form .btn {
     width: 100%;
+    font-size: 1rem;
+    padding-top: 14px;
+    padding-bottom: 14px;
 }

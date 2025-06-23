@@ -22,8 +22,8 @@ body.main-page .header{
   padding-top: 2.8em;
   padding-bottom: 2em;
 }
-.header .inner {
-  
+.header .inner .switch-wrapper{
+  font-size: 0.9rem;
 }
 body.front-page .header .inner {
   background-color: transparent;
@@ -34,7 +34,7 @@ body.front-page .header .inner {
 }
 .header .inner .header__buttons {
   display: flex;
-  column-gap: 1em;
+  column-gap: .5em;
 }
 .header .inner .header__buttons .header__cart-btn {
     background-image: url(./images/cart.svg);

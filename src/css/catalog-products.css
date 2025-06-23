@@ -4,11 +4,37 @@ body.catalog-product-page {
 body.catalog-product-page .catalog-header .inner{
     height: 370px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    background-color: #fff;
 
     border-radius: 15px;
     padding: 1em;
+
+    margin-top: 2em;
+}
+body.catalog-product-page .catalog-header .inner {
+    background-image: url('./images/catalog_text.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+body.catalog-product-page .catalog-header .breadcrumbs-page {
+    display: flex;
+    column-gap: 2em;
+    color: #9E9E9E;
+
+   
+}
+body.catalog-product-page .catalog-header .breadcrumbs-page .link {
+    position: relative;
+}
+body.catalog-product-page .catalog-header .breadcrumbs-page .link::after {
+    content: '>';
+    position: absolute;
+    top: 5%;
+    right: -24px;
+}
+body.catalog-product-page .catalog-header .breadcrumbs-page .link:last-child:after {
+    display: none;
 }
 body.catalog-product-page ul {
     list-style-type: none;
@@ -17,7 +43,7 @@ body.catalog-product-page ul {
 
 /* Catalog */
 body.catalog-product-page .catalog-products {
-    margin-top: 1em;
+    margin-top: 4em;
 }
 body.catalog-product-page .catalog-products .inner{
     display: flex;
@@ -75,9 +101,41 @@ body.catalog-product-page #primary {
 
 
 }
+body.catalog-product-page #primary #wpfBlock_1 .wpfFilterContent label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
 body.catalog-product-page #primary .wpfPriceRangeField {
     -moz-appearance: textfield;
+    border: 1px solid #DCDCDC;
+    border-radius: 5px;
+    width: 100px;
+    font-size: 0.8rem;
+    padding-left: 0.5em;
+}
+body.catalog-product-page #primary .wpfFilterWrapper {
+    margin-bottom: 1em;
+}
+body.catalog-product-page #primary .wpfFilterTitle {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+body.catalog-product-page #primary .wpfCheckbox {
+    padding-right: .3em;
+}
+body.catalog-product-page #primary .wpfCheckbox input{
+    width: 20px;
+    height: 20px;
+    
+}
+body.catalog-product-page #primary .wpfFilterContent label {
+    font-weight: 400;
+    font-size: 0.9rem;
 }
 body.catalog-product-page #primary .wpfFilterButtons, body.catalog-product-page #primary .wpfFilterButtons .btn {
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
