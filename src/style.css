@@ -68,6 +68,8 @@ a {
 
   background-repeat: no-repeat;
   background-position: center;
+  
+  display: block;
 }
 .container {
   max-width: 1400px;

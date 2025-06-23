@@ -1,0 +1,83 @@
+body.catalog-product-page {
+    background-color: #FAFAFA;
+}
+body.catalog-product-page .catalog-header .inner{
+    height: 370px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+
+    border-radius: 15px;
+    padding: 1em;
+}
+body.catalog-product-page ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Catalog */
+body.catalog-product-page .catalog-products {
+    margin-top: 1em;
+}
+body.catalog-product-page .catalog-products .inner{
+    display: flex;
+    justify-content: space-between;
+}
+body.catalog-product-page .catalog-products .inner .products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+body.catalog-product-page .catalog-products .inner .products .product {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 1em;
+}
+body.catalog-product-page .catalog-products .inner .products .onsale, body.catalog-product-page .catalog-products .inner .products .screen-reader-text {
+    display: none;
+}
+body.catalog-product-page .catalog-products .inner .products .woocommerce-LoopProduct-link img {
+    margin-bottom: 2em;
+}
+body.catalog-product-page .catalog-products .inner .products .woocommerce-loop-product__title {
+    font-size: 1rem;
+    font-weight: 400;
+}
+body.catalog-product-page .catalog-products .inner .products .product-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+body.catalog-product-page .catalog-products .inner .products .product-footer .product-price {
+    font-size: 0.9em;
+    font-weight: 600;
+}
+body.catalog-product-page .catalog-products .inner .products .add_to_cart_button {
+    background-color: transparent;
+    background: url(./images/cart.svg) center center no-repeat, var(--main-gradient-hor);
+    border: none;
+    width: 39px;
+    height: 39px;
+}
+
+/* Filters */
+body.catalog-product-page #primary .wpfPriceRangeField::-webkit-outer-spin-button, body.catalog-product-page #primary .wpfPriceRangeField::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body.catalog-product-page #sidebar {
+    width: 20%;
+}
+body.catalog-product-page #primary {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 1em;
+
+
+}
+body.catalog-product-page #primary .wpfPriceRangeField {
+    -moz-appearance: textfield;
+}
+body.catalog-product-page #primary .wpfFilterButtons, body.catalog-product-page #primary .wpfFilterButtons .btn {
+    width: 100%;
+}

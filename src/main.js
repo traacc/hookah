@@ -4,6 +4,10 @@ import './css/header.css'
 import './css/front-page.css'
 import './css/footer.css'
 
+import './css/catalog-products.css'
+
+import './css/cart.css'
+
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 

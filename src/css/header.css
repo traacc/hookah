@@ -1,4 +1,19 @@
 /* Header */
+.header {
+  max-width: 1600px;
+  margin: 0 auto;
+
+  color: #fff;
+  background-color: var(--black-color);
+
+  border-radius: 20px;
+
+  margin-top: 1em;
+}
+body.main-page .header{
+  max-width: 100%;
+  background-color: transparent;
+}
 .header .inner {
   display: flex;
   justify-content: space-between;
@@ -6,6 +21,12 @@
 
   padding-top: 2.8em;
   padding-bottom: 2em;
+}
+.header .inner {
+  
+}
+body.front-page .header .inner {
+  background-color: transparent;
 }
 .header .inner .header__nav{
     display: flex;
@@ -15,9 +36,9 @@
   display: flex;
   column-gap: 1em;
 }
-.header .inner .header__buttons .header__cart-btn{
+.header .inner .header__buttons .header__cart-btn {
     background-image: url(./images/cart.svg);
 }
-.header .inner .header__buttons .header__user-btn{
+.header .inner .header__buttons .header__user-btn {
     background-image: url(./images/user.svg);
 }
